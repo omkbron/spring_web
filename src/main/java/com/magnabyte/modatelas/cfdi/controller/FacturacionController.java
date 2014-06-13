@@ -86,7 +86,7 @@ public class FacturacionController {
 //		String regex = suc + "_" + caja + "_" + ticket + "_\\d+.xml";
 		log.debug(regex);
 		Pattern pattern = Pattern.compile(regex);
-		SmbFile dir = new SmbFile("smb://10.2.200.149/users/equipoDesarrollo03/Documents/ovelasco/DocumentosIncidentes/");
+		SmbFile dir = new SmbFile("smb://10.2.200.125/compartido/");
 		if(dir.exists()) {
 			SmbFile[] files = dir.listFiles();
 			
